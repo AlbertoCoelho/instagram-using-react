@@ -1,3 +1,12 @@
+export default function Navbar(){
+    return (
+      <div class="navbar">
+        <Container />
+      </div>
+    );
+}
+
+
 function Logo(){
 return (
     <div class="logo">
@@ -33,16 +42,28 @@ function Pesquisa(){
 }
 
 function Icones(){
+    const ionicon = [
+    {nome: "paper-plane-outline"},
+    {nome: "compass-outline"},
+    {nome: "heart-outline"},
+    {nome: "person-outline"}
+    ];
+    
     return (
         <div class="icones">
-            <ion-icon name="paper-plane-outline"></ion-icon>
-            <ion-icon name="compass-outline"></ion-icon>
-            <ion-icon name="heart-outline"></ion-icon>
-            <ion-icon name="person-outline"></ion-icon>
+            {ionicon.map( (item) => <RetornoIonIcon nome={item.nome} />)}
         </div>
     );
    
 }
+
+function RetornoIonIcon(props){
+    return (
+        <ion-icon name={props.nome}></ion-icon>
+    );
+}
+
+
 
 function IconesMobile(){
     return (
@@ -67,11 +88,3 @@ function Container(){
     );
 }
 
-
-export default function Navbar(){
-    return (
-      <div class="navbar">
-        <Container />
-      </div>
-    );
-}

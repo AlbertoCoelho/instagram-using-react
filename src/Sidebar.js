@@ -10,15 +10,13 @@ export default function Sidebar (){
 
 function Usuario(){
     return (
-      <div class="usuario">
           <InformacaoUsuario link="assets/img/catanacomics.svg" usuario="catanacomics" texto="Catana"/>
-      </div>
     );
 }
 
 function InformacaoUsuario(props){
     return (
-    <div>
+    <div class="usuario">
         <img src={props.link} />
         <div class="texto">
             <strong>{props.usuario}</strong>
@@ -33,7 +31,7 @@ function Sugestoes(){
    const sugestoes = [
        { nomeimagem: "bad.vibes.memes" , razao: "Segue você" , seguir: "Seguir"},
        { nomeimagem: "chibirdart" , razao: "Segue você" , seguir: "Seguir"},
-       { nomeimagem: "razoesparaacreditar" , razao: "Segue você" , seguir: "Seguir"},
+       { nomeimagem: "razoesparaacreditar" , razao: "Novo no Instagram" , seguir: "Seguir"},
        { nomeimagem: "adorable_animals", razao: "Segue você" , seguir: "Seguir"},
        { nomeimagem: "smallcutecats", razao: "Segue você" , seguir: "Seguir"}
    ];

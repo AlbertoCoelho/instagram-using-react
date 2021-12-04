@@ -17,8 +17,8 @@ function Ionicon(){
     ];
 
     return (
-        <div>
-            {ionicon.map ( (item) => <Inserindoionicon nome = {item.nome}/>) }
+        <div class="fundo-mobile">
+            {ionicon.map ( (item) => <Inserindoionicon nome={item.nome}/>)}
         </div>
     );
 }
