@@ -36,7 +36,6 @@ function Sugestoes(){
        { nomeimagem: "smallcutecats", razao: "Segue você" , seguir: "Seguir"}
    ];
 
-
     return (
         <div class="sugestoes">
             <div class="titulo">
@@ -47,13 +46,7 @@ function Sugestoes(){
             {sugestoes.map( (item) => <Sugestao nomeimagem={item.nomeimagem} razao={item.razao} seguir={item.seguir} />)}
 
         </div>
-
-        
-
-
-
     );
-
 }
 
 function Sugestao(props){
